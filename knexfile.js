@@ -1,4 +1,4 @@
-const databaseName = 'newmate_db';
+const databaseName = 'newmate-db';
 
 module.exports = {
   development: {
