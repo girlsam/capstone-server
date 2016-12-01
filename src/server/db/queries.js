@@ -1,5 +1,4 @@
 const knex = require('./knex.js');
-const request = require('request');
 
 exports.getItems = function(tableName, callback, itemId) {
   if (itemId) {
