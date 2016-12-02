@@ -122,7 +122,7 @@ exports.seed = function(knex, Promise) {
           description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           gender: 'male',
           sleep_habits: ['eary to bed', 'early to rise'],
-          image: 'https://images.unsplash.com/photo-1463453091185-61582044d556?dpr=2&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=',
+          image: 'https://images.unsplash.com/photo-1476657680631-c07285ff2581?dpr=2&auto=format&fit=crop&w=1199&h=845&q=80&cs=tinysrgb&crop=',
           age: 34,
           smoker_friendly: ['tobacco'],
           weekday: '9-5ish',
