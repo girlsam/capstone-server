@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
     } else {
       renderObject.rooms = results;
       res.json({
-        users: renderObject
+        rooms: renderObject
       });
     }
   });
@@ -39,6 +39,24 @@ router.post('/', (req, res, next) => {
   queries.postItem('rooms', newRoom, (err, result) => {
     if (err) {
       renderObject.message = err.message || 'Sorry, there was an issue creating that room. Please try again.';
+      res.json({
+        error: renderObject
+      });
+    } else {
+      renderObject.room = result;
+      res.json({
+        room: renderObject
+      });
+    }
+  });
+});
+
+router.delete('/:id', (req, res, next) => {
+  let renderObject = {};
+  let roomId = req.params.id;
+  queries.deleteOne('rooms', roomId, (err, result) => {
+    if (err) {
+      renderObject.message = err.message || 'Sorry, we had an issue finding that room. Please try again.';
       res.json({
         error: renderObject
       });
