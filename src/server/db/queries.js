@@ -23,3 +23,24 @@ exports.getItems = function(tableName, callback, itemId) {
     });
   }
 };
+
+exports.postItem = (tableName, object, callback) => {
+  knex(tableName)
+  .insert(object)
+  .then(result => {
+    callback (null, result);
+  }).catch(err => {
+    callback(err);
+  });
+};
+
+exports.deleteOne = (tableName, itemId, callback) => {
+  knex(tableName)
+  .del()
+  .where('id', itemId)
+  .then(result => {
+    callback(null, result);
+  }).catch(err => {
+    callback(err);
+  });
+};
