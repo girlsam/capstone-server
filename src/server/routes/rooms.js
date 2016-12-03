@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
     } else {
       renderObject.rooms = results;
       res.json({
-        rooms: renderObject
+        results: renderObject
       });
     }
   });
