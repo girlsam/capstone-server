@@ -6,7 +6,7 @@ exports.seed = (knex, Promise) => {
         // Inserts seed entries
         knex('rooms').insert({
           housing_type: 'condo',
-          amenities: ['off-street parking', 'dogs allowed', 'in-unit laundry'],
+          amenities: JSON.stringify(['off-street parking', 'dogs allowed', 'in-unit laundry']),
           rent_cost: 800,
           lease_length: 12,
           bedrooms: 2,
@@ -17,12 +17,12 @@ exports.seed = (knex, Promise) => {
           city: 'Denver',
           state: 'CO',
           zip_code: 80203,
-          image: ['http://photos.zillowstatic.com/p_f/ISivn2wqxtfsli0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISqdfqla1uemqk0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISi7de34xl6pqk0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISaplqdktl7vli0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISewlq4udi3eqk0000000000.jpg'],
-          neighborhood: ['capitol hill']
+          image: JSON.stringify(['http://photos.zillowstatic.com/p_f/ISivn2wqxtfsli0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISqdfqla1uemqk0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISi7de34xl6pqk0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISaplqdktl7vli0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISewlq4udi3eqk0000000000.jpg']),
+          neighborhood: 'capitol hill'
         }),
         knex('rooms').insert({
           housing_type: 'apartment',
-          amenities: ['hardwood floors', 'central air'],
+          amenities: JSON.stringify(['hardwood floors', 'central air']),
           rent_cost: 950,
           lease_length: 12,
           bedrooms: 2,
@@ -33,12 +33,12 @@ exports.seed = (knex, Promise) => {
           city: 'Denver',
           state: 'CO',
           zip_code: 80203,
-          image: ['http://photos.zillowstatic.com/p_f/ISal2hequ0opel1000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISqdn4ug1g29fl1000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISewt4d0e4r0fl1000000000.jpg'],
+          image: JSON.stringify( ['http://photos.zillowstatic.com/p_f/ISal2hequ0opel1000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISqdn4ug1g29fl1000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISewt4d0e4r0fl1000000000.jpg']),
           neighborhood: 'capitol hill'
         }),
         knex('rooms').insert({
           housing_type: 'single-family home',
-          amenities: ['in-unit laundry', 'cats allowed', 'dogs allowed', 'off-street parking', 'in-unit laundry'],
+          amenities: JSON.stringify(['in-unit laundry', 'cats allowed', 'dogs allowed', 'off-street parking', 'in-unit laundry']),
           rent_cost: 600,
           lease_length: 6,
           bedrooms: 3,
@@ -49,13 +49,13 @@ exports.seed = (knex, Promise) => {
           city: 'Denver',
           state: 'CO',
           zip_code: 80223,
-          image: ['http://photos.zillowstatic.com/p_f/ISq1aaol2gwmhq0000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS6uux3c9va6iq0000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS6eeyoyawchhq0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISm6zl4phbr0iq0000000000.jpg'],
+          image: JSON.stringify(['http://photos.zillowstatic.com/p_f/ISq1aaol2gwmhq0000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS6uux3c9va6iq0000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS6eeyoyawchhq0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISm6zl4phbr0iq0000000000.jpg']),
           neighborhood: 'baker',
           user_id: knex('users').select('id').where('first_name', 'James')
         }),
         knex('rooms').insert({
           housing_type: 'single-family home',
-          amenities: ['backyard', 'dogs allowed', 'in-unit laundry', 'storage', 'fenced yard'],
+          amenities: JSON.stringify(['backyard', 'dogs allowed', 'in-unit laundry', 'storage', 'fenced yard']),
           rent_cost: 700,
           lease_length: 12,
           bedrooms: 2,
@@ -66,13 +66,13 @@ exports.seed = (knex, Promise) => {
           city: 'Denver',
           state: 'CO',
           zip_code: 80211,
-          image: ['http://photos.zillowstatic.com/p_f/ISa9dhoayc3vq51000000000.jpg'],
-          neighborhood: ['sunnyside'],
+          image: JSON.stringify(['http://photos.zillowstatic.com/p_f/ISa9dhoayc3vq51000000000.jpg']),
+          neighborhood: 'sunnyside',
           user_id: knex('users').select('id').where('first_name', 'Ashley')
         }),
         knex('rooms').insert({
           housing_type: 'apartment',
-          amenities: ['hardwood floors', 'central air', 'cats allowed', 'dogs allowed', 'pool', 'fitness center'],
+          amenities: JSON.stringify(['hardwood floors', 'central air', 'cats allowed', 'dogs allowed', 'pool', 'fitness center']),
           rent_cost: 950,
           lease_length: 8,
           bedrooms: 2,
@@ -83,12 +83,12 @@ exports.seed = (knex, Promise) => {
           city: 'Denver',
           state: 'CO',
           zip_code: 80205,
-          image: ['http://photos.zillowstatic.com/p_f/ISq9c5s5ijj0ji0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISax7hrs9336ji0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISuk3tqf1nmbji0000000000.jpg'],
+          image: JSON.stringify(['http://photos.zillowstatic.com/p_f/ISq9c5s5ijj0ji0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISax7hrs9336ji0000000000.jpg', 'http://photos.zillowstatic.com/p_f/ISuk3tqf1nmbji0000000000.jpg']),
           neighborhood: 'lodo'
         }),
         knex('rooms').insert({
           housing_type: 'single-family home',
-          amenities: ['in-unit laundry', 'cats allowed', 'dogs allowed', 'off-street parking', 'in-unit laundry', 'bike storage'],
+          amenities: JSON.stringify(['in-unit laundry', 'cats allowed', 'dogs allowed', 'off-street parking', 'in-unit laundry', 'bike storage']),
           rent_cost: 700,
           lease_length: 12,
           bedrooms: 2,
@@ -99,7 +99,7 @@ exports.seed = (knex, Promise) => {
           city: 'Denver',
           state: 'CO',
           zip_code: 80209,
-          image: ['http://photos.zillowstatic.com/p_f/ISx3t0iua9g5du1000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS9lm0zaykrddu1000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS5q7ho1sp4j7u1000000000.jpg'],
+          image: JSON.stringify(['http://photos.zillowstatic.com/p_f/ISx3t0iua9g5du1000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS9lm0zaykrddu1000000000.jpg', 'http://photos.zillowstatic.com/p_f/IS5q7ho1sp4j7u1000000000.jpg']),
           neighborhood: 'washington park'
         })
       ]);
