@@ -21,6 +21,7 @@ exports.up = (knex, Promise) => {
     table.string('image_2');
     table.string('image_3');
     table.string('image_4');
+    table.string('images');
     table.integer('user_id').references('id').inTable('users');
     table.timestamp('created_at').defaultTo(knex.fn.now());
   });
