@@ -3,5 +3,5 @@ exports.seed = (knex, Promise) => {
   return knex('rooms').del()
     .then(() => knex('users').del())
     .then(() => knex('mate_preferences').del())
-    .then(() => knex('room_preferences').del())
+    .then(() => knex('room_preferences').del());
 };

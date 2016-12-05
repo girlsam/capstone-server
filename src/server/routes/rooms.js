@@ -4,7 +4,7 @@ const queries = require('../db/queries');
 
 router.get('/', (req, res, next) => {
   let renderObject = {};
-  queries.getItems('rooms', (err, results) => {
+  queries.getRooms((err, results) => {
     if (err) {
       renderObject.message = err.message || 'Sorry, we had an issue loading our rooms. Please try again.';
       res.json({

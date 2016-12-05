@@ -24,6 +24,18 @@ exports.getItems = function(tableName, callback, itemId) {
   }
 };
 
+exports.getRooms = (callback) => {
+  knex('rooms')
+  .select('*')
+  .join('users', 'users.id', '=', 'rooms.user_id')
+  .then(result => {
+    callback (null, result);
+  })
+  .catch(err => {
+    callback(err);
+  });
+};
+
 exports.postItem = (tableName, object, callback) => {
   knex(tableName)
   .insert(object)

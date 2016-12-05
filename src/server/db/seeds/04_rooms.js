@@ -23,7 +23,8 @@ exports.seed = (knex, Promise) => {
           image_2: 'http://photos.zillowstatic.com/p_f/ISqdfqla1uemqk0000000000.jpg',
           image_3: 'http://photos.zillowstatic.com/p_f/ISi7de34xl6pqk0000000000.jpg',
           image_4: 'http://photos.zillowstatic.com/p_f/ISewlq4udi3eqk0000000000.jpg',
-          neighborhood: 'Capitol Hill'
+          neighborhood: 'Capitol Hill',
+          user_id: knex('users').select('id').where('first_name', 'Ray')
         }),
         knex('rooms').insert({
           housing_type: 'Apartment',
@@ -42,7 +43,8 @@ exports.seed = (knex, Promise) => {
           image_1: 'http://photos.zillowstatic.com/p_f/ISal2hequ0opel1000000000.jpg',
           image_2: 'http://photos.zillowstatic.com/p_f/ISqdn4ug1g29fl1000000000.jpg',
           image_3: 'http://photos.zillowstatic.com/p_f/ISewt4d0e4r0fl1000000000.jpg',
-          neighborhood: 'Capitol Hill'
+          neighborhood: 'Capitol Hill',
+          user_id: knex('users').select('id').where('first_name', 'Tom')
         }),
         knex('rooms').insert({
           housing_type: 'Single-family Home',
@@ -106,7 +108,8 @@ exports.seed = (knex, Promise) => {
           image_1: 'http://photos.zillowstatic.com/p_f/ISq9c5s5ijj0ji0000000000.jpg',
           image_2: 'http://photos.zillowstatic.com/p_f/ISax7hrs9336ji0000000000.jpg',
           image_3: 'http://photos.zillowstatic.com/p_f/ISuk3tqf1nmbji0000000000.jpg',
-          neighborhood: 'LoDo'
+          neighborhood: 'LoDo',
+          user_id: knex('users').select('id').where('first_name', 'Fatimah')
         }),
         knex('rooms').insert({
           housing_type: 'Single-family Home',
@@ -127,7 +130,8 @@ exports.seed = (knex, Promise) => {
           image_1: 'http://photos.zillowstatic.com/p_f/ISx3t0iua9g5du1000000000.jpg',
           image_2: 'http://photos.zillowstatic.com/p_f/IS9lm0zaykrddu1000000000.jpg',
           image_3: 'http://photos.zillowstatic.com/p_f/IS5q7ho1sp4j7u1000000000.jpg',
-          neighborhood: 'Washington Park'
+          neighborhood: 'Washington Park',
+          user_id: knex('users').select('id').where('first_name', 'Brian')
         })
       ]);
     });
