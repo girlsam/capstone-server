@@ -10,7 +10,7 @@ exports.up = (knex, Promise) => {
     table.integer('lease_length').notNullable();
     table.integer('bedrooms').notNullable();
     table.integer('bathrooms').notNullable();
-    table.text('description').notNullable();
+    table.text('room_description').notNullable();
     table.string('cross_street_1').notNullable();
     table.string('cross_street_2').notNullable();
     table.string('city').notNullable();

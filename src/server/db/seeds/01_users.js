@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Tom',
           last_name: 'Eubank',
-          description: 'Aliquam getting paid well holla whenever that stop, sometimes I wish the same quia fuga et voluptate. Sit ut suscipit fugit dolores tempora beatae. Voluptatem and that\'s when she text me. I\'ll be there for you, I will care for you you already know though hic voluptatem eaque quia.',
+          description: 'Health Conscious Coach who illuminates consciousness within each person through nutrition. He creates amazing synergies with food and is called the \'Food Alchemist\'. He loves blinging out tastebuds with his fantastic meals. He uses intuition to guide people to a new paradigm of living. Mother Earth brings him grounding and peace. His heart is kind and genuine. Outdoor activities is also where he finds bliss.',
           gender: 'non-binary',
           morning_sleep: 'Early to rise',
           night_sleep: 'Early to bed',
@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Kelly',
           last_name: 'Wright',
-          description: 'Cat ipsum dolor sit amet, hunt anything that moves or hopped up on goofballs hide when guests come over. Hide when guests come over intrigued by the shower, or stare at ceiling climb leg for stretch and use lap as chair. Hunt anything that moves flop over, leave dead animals as gifts for chase imaginary bugs, chase mice for stare at ceiling yet hopped up on goofballs.',
+          description: 'I am a friendly, mellow adult female and just completed my last student fieldwork term in a healthcare profession.I would prefer to have a roommate who is open to having pleasant conversations with some occasional socializing. I\'m looking for a room to rent in an apartment or in a townhome community. I do need internet access, but can purchase my own internet account.',
           gender: 'female',
           morning_sleep: 'Early to rise',
           night_sleep: 'Night owl',
@@ -35,7 +35,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Ashley',
           last_name: 'Fisher',
-          description: 'I am one of those that never take on about princely fortunes, and am quite content if the world is ready to board and lodge me, while I am putting up at this grim sign of the Thunder Cloud. Upon the whole, I thought that the 275th lay would be about the fair thing, but would not have been surprised had I been offered the 200th, considering I was of a broad-shouldered make.',
+          description: 'I am a 33 y.o. female with a well behaved pup (Mochi). I work downtown (usually 8am-5pm or 6pm). Looking for someone who preferably has a dog so Mochi has a playmate and we can help eachother out with walks, feeding, trips etc. but that obviously isn\'t mandatory. However, you MUST like dogs. I am active, clean, responsible. Not a big partier but like to go out for drinks, brunch, dinner etc or stay in and cook/veg out. NO Smoking. I do not typically take part in the smoking part of 420...not against it on occasion outside.',
           gender: 'female',
           morning_sleep: 'Sleep-in',
           night_sleep: 'Night owl',
@@ -49,7 +49,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'James',
           last_name: 'Cosgrove',
-          description: 'Lorizzle ipsum bling bling sit amizzle, consectetuer adipiscing elit. Nizzle sapien velizzle, bling bling volutpat, suscipit , gravida vel, arcu. Check it out hizzle that\'s the shizzle. We gonna chung erizzle. Fo izzle dolor fo turpis tempizzle tempor. Gangsta boom shackalack mofo et turpizzle. Sizzle izzle tortor. Pellentesque uhuh ... yih!',
+          description: 'I\'m an engineer working outside of Boulder looking to rent a room or basement in the area. I am clean, quiet, responsible, pet-free, and not a partier. I spend quite a bit of time in the mountains on the weekends and just want a nice place to come "home" to after work.',
           gender: 'male',
           morning_sleep: 'Early to rise',
           night_sleep: 'Early to bed',
@@ -63,7 +63,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Brian',
           last_name: 'Harmon',
-          description: 'Est Schlitz shoreditch fashion axe. Messenger bag cupidatat Williamsburg sustainable aliqua, artisan duis pickled pitchfork. Semiotics Banksy ad roof party, jean shorts selvage mollit vero consectetur hashtag before they sold out blue bottle qui nihil aute. Aliquip artisan retro squid ullamco. Vegan enim Williamsburg, eu umami shabby chic single-origin coffee et.',
+          description: 'I am a 29 yr old male who works a regular schedule and travels quite a bit (2-3x month). I would like to rent a space in your town-home, apartment, or house. I have all of my own furniture and no pets. I am looking to move closer to the city. I work in the Energy Technology sector and am very active; enjoy Hiking, Weight lifting, running, Camping, MTB, Skiing...shocking I know. I enjoy checking out a brewery and am not much into the party scene these days. - I don\'t partake in 420, I have no issue with people who use it occasionally.',
           gender: 'Male',
           morning_sleep: 'Sleep-in',
           night_sleep: 'Night owl',
@@ -77,7 +77,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Sarah',
           last_name: 'Anthony',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          description: 'I\'m a very social individual that\'s from a big city, and after 3 years of having a very limited social life due to my work hours and area I\'ve been working in, I decided to look for work in the same industry but close to big city to work on having a better work/life balance. If you have any further questions, feel free to contact me via email. Btw, I\'m allergic to cats.',
           gender: 'Female',
           morning_sleep: 'Early to rise',
           night_sleep: 'Early to bed',
@@ -91,7 +91,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Fatimah',
           last_name: 'Edwards',
-          description: 'I would like to give you a backstage pass to my imagination. This is just common superficiality. Is thats whats so special about a woman? Superficiality with their face colours? The magic Indian is a mysterious spiritual force, and we\'re going to Cathedral Rock, and that\'s the vortex of the heart.',
+          description: 'I work with children. I also have a deep connection with mother earth and adores plants and animals. I\'ve trained horses for numerous years and has learned to communicate with them beyond a stereotypical manner. Very active and loves just about anything outdoors...skiing, canoeing, biking, climbing, hiking... Loves making natural remedies and crafting with natural materials.',
           gender: 'female',
           morning_sleep: 'Sleep in',
           night_sleep: 'Night Owl',
@@ -105,7 +105,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Robert',
           last_name: 'Parker',
-          description: 'CrackBerry, in the main gorgeous that so-called “iPad killer” in my opinion iPhone rip-offs, while profit, consequently MacBook Air is just beautiful in the end battery drain so Android geek, I think Apple will only get better, in addition iTunes makes it easy, another point is that Flash sucks whereas Android is fragmented.',
+          description: 'Hey! I am looking for a place to move into in Denver or Boulder after Christmas. Whether you have a room, or wanted to rent something together. Cool either way. Trying not to spend more than $650 a month on rent. I\'m in my mid 20s. Outgoing and fun. I am animal and 420 friendly. I do not have any animals of my own. I am an active guy and outdoor enthusiast, and looking to find another similar roommate. I enjoy hiking, camping, skiing, and spontaneous road trips. It\'d be cool to find a guy with similar interests. I am also most comfortable at home when nude or in my undies, so I\'d prefer my roommate to also be somewhat of a naturist.',
           gender: 'male',
           morning_sleep: 'Early to rise',
           night_sleep: 'Night Owl',
