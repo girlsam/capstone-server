@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
         knex('users').insert({
           first_name: 'Tom',
           last_name: 'Eubank',
-          description: 'I am a 28 year old teacher who has been living in Denver for about two years now. I ski and ride horses, enjoy camping, backpacking, hiking, breweries, eating food - all the typical Denver stuff - and I also work hard. Seeking housemates of either gender (preferably female) who are looking for a living community - new friends and people to go on adventures with. Would love to have house dinners or all go out together from time to time. No cigarette smokers please - 420 friendly if outside or in the garage. Must love dogs - I have two awesome hound dog mixes who love to cuddle and are well behaved. Please have a steady job and reliable income so you can pay rent on time!',
+          description: 'I am a 24 year old teacher who has been living in Denver for about two years now. Seeking housemates of either gender (preferably female) who are looking for a living community - new friends and people to go on adventures with. No cigarette smokers please - 420 friendly if outside or in the garage. Must love dogs. Please have a steady job and reliable income so you can pay rent on time!',
           gender: 'non-binary',
           morning_sleep: 'Early to rise',
           night_sleep: 'Early to bed',
