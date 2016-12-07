@@ -10,10 +10,21 @@
   app.set('port', port);
 
   const server = http.createServer(app);
+  const io = require('socket.io').listen(server.listen(port));
 
-  server.listen(port);
+  //server.listen(port);
   server.on('error', onError);
   server.on('listening', onListening);
+
+  io.sockets.on('connection', (socket) => {
+    socket.emit('message', {
+      from: 'user1',
+      message: 'Hi, I\'m Tom! \n I also love cats. \n Do you have any dogs?'
+    });
+    socket.on('send', (data) => {
+      io.sockets.emit('message', data);
+    });
+  });
 
   function normalizePort(val) {
     const port = parseInt(val, 10);
