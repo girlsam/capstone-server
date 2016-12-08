@@ -30,6 +30,7 @@ exports.seed = (knex, Promise) => {
           housing_type: 'Apartment',
           amenity_1: 'Hardwood Floors',
           amenity_2: 'Central Air',
+          amenity_2: 'Dogs Allowed',
           rent_cost: 950,
           lease_length: 12,
           bedrooms: 2,
